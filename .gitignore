@@ -1,0 +1,10 @@
+# B70: credentials and keys never versioned
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
