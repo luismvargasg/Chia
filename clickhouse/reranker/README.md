@@ -6,9 +6,14 @@ Reordena los 120 tópicos de la fase 1 con **Qwen3-Reranker-4B (Q4_K_M)** en lla
 - Carga el modelo **una vez** al arrancar (todas las capas en GPU) y no lo descarga.
 - **Una petición a la vez**, cola FIFO. Una petición que espera más de su `timeout_s` (60 s desde quyca) recibe 503 y se descarta.
 - Receta de B62/B63: instrucción 1, documento `"{name}. {keywords}. {summary}"`, puntaje = P(sí) de los logits «yes»/«no», caché del prefijo compartido. Semillas de más de 2.000 tokens se cortan para el reranker (`seed_truncated` en la respuesta).
-- API interna: `GET /health` y `POST /rerank` (ver el encabezado de `rerank_service.py`). No registra el texto de las peticiones.
+- API interna: `GET /health` y `POST /rerank` (ver el encabezado de `rerank_service.py`); la respuesta trae `seed_truncated`, que quyca reenvía en la fase 2. No registra el texto de las peticiones.
 
 ## Arranque
+Todo junto (contenedores, reranker y quyca en el puerto 8081, con espera de `/health` y log en `~/ASCUN/logs/`):
+```bash
+bash arranque_herramienta.sh              # arranca lo que falte; --reiniciar reinicia reranker y quyca; --detener los apaga
+```
+Solo el reranker:
 ```bash
 bash run_reranker.sh        # primer plano; usa ~/ASCUN/reranker_venv y ~/ASCUN/modelos/qwen3-reranker-4b-q4_k_m.gguf
 ```
