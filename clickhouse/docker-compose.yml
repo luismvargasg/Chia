@@ -1,0 +1,32 @@
+version: '3.3'
+
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:$CLICKHOUSE_VERSION
+    container_name: $CLICKHOUSE_CONTAINER_NAME
+    restart: always
+    environment:
+      - CLICKHOUSE_DB=$CLICKHOUSE_DB
+      - CLICKHOUSE_USER=$CLICKHOUSE_USER
+      - CLICKHOUSE_PASSWORD=$CLICKHOUSE_PASSWORD
+    ports:
+      # Atado a 127.0.0.1: solo procesos de esta misma máquina lo alcanzan
+      # (quyca corre con network_mode: host y le habla por localhost, igual
+      # que ya hace con Mongo y Elasticsearch). Nadie fuera de esta máquina
+      # puede llegar a este puerto. Ver README para el detalle.
+      - "127.0.0.1:$CLICKHOUSE_PORT:8123"
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+      - ./init:/docker-entrypoint-initdb.d:ro
+    deploy:
+      resources:
+        limits:
+          cpus: $CLICKHOUSE_CPUS
+          memory: $CLICKHOUSE_RAM
+
+volumes:
+  clickhouse_data:

@@ -1,0 +1,18 @@
+# Environment files
+.env
+ 
+# Si alguna vez se usa bind mount en vez de volumen nombrado para los datos
+clickhouse-data/
+ 
+# Logs
+*.log
+ 
+# OS
+.DS_Store
+Thumbs.db
+ 
+# B70: bulky downloads and local artifacts are not versioned (re-downloadable / regenerable)
+scripts/data/hs92_country_product_year_*.csv
+__pycache__/
+*.pyc
+*:Zone.Identifier

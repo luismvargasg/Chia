@@ -1,0 +1,27 @@
+# Dedicated Ollama for the topic-curation tool (Qwen3-Embedding-4B, D-061).
+# Separate from the shared `ollama` container of Chia/ollama (Nomic, port 11434),
+# which this file does not touch. Bound to loopback only.
+services:
+  ollama-qwen:
+    image: ollama/ollama:latest
+    container_name: ollama-qwen
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:11436:11434"
+    environment:
+      OLLAMA_NUM_PARALLEL: "1"
+      OLLAMA_MAX_LOADED_MODELS: "1"
+      OLLAMA_KEEP_ALIVE: "30m"
+    volumes:
+      - ollama-qwen-data:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  ollama-qwen-data:
+    name: ollama-qwen-data
