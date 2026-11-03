@@ -9,9 +9,9 @@ Reordena los 120 tópicos de la fase 1 con **Qwen3-Reranker-4B (Q4_K_M)** en lla
 - API interna: `GET /health` y `POST /rerank` (ver el encabezado de `rerank_service.py`); la respuesta trae `seed_truncated`, que quyca reenvía en la fase 2. No registra el texto de las peticiones.
 
 ## Arranque
-Todo junto (contenedores, reranker y quyca en el puerto 8081, con espera de `/health` y log en `~/ASCUN/logs/`):
+Todo junto (contenedores, reranker y quyca-dev en el puerto 8080 (`make up-dev`), con espera de `/health` y log en `~/ASCUN/logs/`):
 ```bash
-bash arranque_herramienta.sh              # arranca lo que falte; --reiniciar reinicia reranker y quyca; --detener los apaga
+bash arranque_herramienta.sh              # arranca lo que falte; --reiniciar reconstruye quyca-dev (make down-dev && make up-dev, ~2 min con el 8080 caído) y reinicia el reranker; --solo-reranker; --detener los apaga
 ```
 Solo el reranker:
 ```bash
