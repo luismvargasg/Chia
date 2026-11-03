@@ -6,10 +6,10 @@
 #        bash arranque_herramienta.sh --detener    stop the reranker and quyca 8081 (frees ~3.1 GB of GPU)
 # Log: ~/ASCUN/logs/arranque_herramienta.log (this script), reranker.log and quyca_8081.log (the processes). Exit code 0 = everything answers, 1 = something failed.
 # Nothing here reads or prints credentials: quyca reads its own .env.dev. SENTRY_DSN is emptied so local tests do not report to Sentry.
-# Settings for the 4 GB laptop (contract 02, section 3.10.4): reranker on the GPU, OLLAMA_NUM_GPU=0 for the embeddings. On a server with >= 8 GB leave OLLAMA_NUM_GPU empty.
+# Settings for the 4 GB laptop (contract 02, section 3.10.4): reranker on the GPU, OLLAMA_NUM_GPU=20 for the embeddings (measured with distinct seeds: 0.4-1.1 s each; 0 would take 7-11 s). On a server with >= 8 GB leave OLLAMA_NUM_GPU empty.
 set -u
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"; QUYCA="${QUYCA_DIR:-$HOME/ASCUN/backend/quyca}"; LOGS="$HOME/ASCUN/logs"; LOG="$LOGS/arranque_herramienta.log"
-PORT_Q="${QUYCA_PORT:-8081}"; PORT_R="${RERANKER_PORT:-11437}"; NUMGPU="${OLLAMA_NUM_GPU-0}"; OLLAMA="http://127.0.0.1:11436"
+PORT_Q="${QUYCA_PORT:-8081}"; PORT_R="${RERANKER_PORT:-11437}"; NUMGPU="${OLLAMA_NUM_GPU-20}"; OLLAMA="http://127.0.0.1:11436"
 mkdir -p "$LOGS"; say(){ echo "$(date '+%F %T') $*" | tee -a "$LOG"; }
 pid_on(){ ss -ltnp 2>/dev/null | grep ":$1 " | sed -E 's/.*pid=([0-9]+).*/\1/' | head -1; }
 wait_for(){ for _ in $(seq 1 "${3:-60}"); do curl -s -m 3 -o /dev/null -f "$1" && return 0; sleep 2; done; say "ERROR: $2 no respondió en $(( ${3:-60} * 2 )) s"; return 1; }
@@ -21,11 +21,11 @@ for c in clickhouse ollama-qwen; do
 done
 wait_for "$OLLAMA/api/tags" "Ollama" 30 || RC=1
 if curl -s -m 3 -f "http://127.0.0.1:$PORT_R/health" >/dev/null; then say "Reranker ya responde en $PORT_R"; else
-  say "Inicio el reranker (carga del modelo ~6 s)"; (cd "$HERE" && nohup bash run_reranker.sh >> "$LOGS/reranker.log" 2>&1 &)
+  say "Inicio el reranker (carga del modelo ~6 s)"; ( cd "$HERE" && exec setsid bash run_reranker.sh ) < /dev/null >> "$LOGS/reranker.log" 2>&1 &
   wait_for "http://127.0.0.1:$PORT_R/health" "reranker" 60 || RC=1; fi
 if curl -s -m 3 -f "http://127.0.0.1:$PORT_Q/app/theme" >/dev/null; then say "Quyca ya responde en $PORT_Q"; else
   say "Inicio quyca (rama $(git -C "$QUYCA" branch --show-current), puerto $PORT_Q)"
-  (cd "$QUYCA" && ENVIRONMENT=dev APP_PORT="$PORT_Q" APP_DEBUG=False SENTRY_DSN= RERANKER_URL="http://127.0.0.1:$PORT_R" OLLAMA_NUM_GPU="$NUMGPU" nohup .venv/bin/python quyca/app.py >> "$LOGS/quyca_$PORT_Q.log" 2>&1 &)
+  ( cd "$QUYCA" && exec setsid env ENVIRONMENT=dev APP_PORT="$PORT_Q" APP_DEBUG=False SENTRY_DSN= RERANKER_URL="http://127.0.0.1:$PORT_R" OLLAMA_NUM_GPU="$NUMGPU" .venv/bin/python quyca/app.py ) < /dev/null >> "$LOGS/quyca_$PORT_Q.log" 2>&1 &
   wait_for "http://127.0.0.1:$PORT_Q/app/theme" "quyca" 60 || RC=1; fi
 # warm the embedding model with the same options quyca sends, only if Ollama has it unloaded (keeps the first user request fast; the container keeps it 24 h)
 if ! docker exec ollama-qwen ollama ps 2>/dev/null | grep -q "qwen3-embedding"; then

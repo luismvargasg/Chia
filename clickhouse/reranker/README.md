@@ -21,7 +21,7 @@ Variables: `RERANKER_GGUF`, `RERANKER_PORT` (11437), `RERANKER_NGL` (99), `RERAN
 En quyca: `RERANKER_URL=http://127.0.0.1:11437` (vacío desactiva la fase 2), `RERANKER_TIMEOUT_S=60`, `OLLAMA_NUM_GPU`.
 
 ## Memoria de la GPU de 4 GB (laptop)
-El reranker residente ocupa ≈ 3,1 GB; los embeddings de Ollama al 100 % en GPU (3,8 GB) no caben juntos. Configuración elegida y medida en B72: **reranker en GPU y `OLLAMA_NUM_GPU=0` en quyca** (embeddings en CPU: 0,1-0,2 s en caliente, ≈ 13 s la primera carga tras 30 min sin uso; reordenar 120 tarda 9,5-11 s). Sin reranker (`out/b71/arranque_gpu.sh`) los embeddings van 100 % en GPU. En un servidor de ≥ 8 GB, `OLLAMA_NUM_GPU` vacío.
+El reranker residente ocupa ≈ 3,1 GB; los embeddings de Ollama al 100 % en GPU (3,8 GB) no caben juntos. Configuración elegida (B72, corregida en B73 con semillas distintas): **reranker en GPU y `OLLAMA_NUM_GPU=20` en quyca** (embeddings 31 %/69 % CPU/GPU: 0,4-1,1 s por semilla nueva, la fase 1 completa ≈ 1,4 s; reordenar 120 tarda 11-16 s) y `OLLAMA_KEEP_ALIVE=24h` en el contenedor (la primera petición tras 31 min tardó 0,22 s). Con `OLLAMA_NUM_GPU=0` una semilla nueva tardaba 7-11 s y una muy larga superaba el límite de 120 s: descartado. Sin reranker (`out/b71/arranque_gpu.sh`) los embeddings van 100 % en GPU. En un servidor de ≥ 8 GB, `OLLAMA_NUM_GPU` vacío.
 
 ## Entorno
 `llama-cpp-python` 0.3.36 compilado con CUDA 12.4 y las bibliotecas `nvidia-*-cu12` en un venv fuera del repositorio (`~/ASCUN/reranker_venv`, copia del entorno de B62). Los GGUF están en `~/ASCUN/modelos/` con `SHA256SUMS` (4B `941f7d1d…af49`, 0,6B `22c9979c…c9a48`).
