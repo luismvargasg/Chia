@@ -1,0 +1,18 @@
+Movilidad sostenible urbana: transición del transporte impulsado por combustibles fósiles hacia sistemas de bajas emisiones de carbono, mediante electromovilidad, transporte público masivo, movilidad activa y planificación urbana centrada en las personas.
+
+Electromovilidad: vehículos eléctricos de pasajeros y de carga, infraestructura de carga, baterías de ion-litio y de sodio, gestión de la red eléctrica asociada, ciclo de vida y reciclaje de baterías.
+
+Transporte público y sistemas masivos: metro, buses eléctricos e híbridos, sistemas de tránsito rápido en autobús (BRT), integración multimodal, gestión de flotas, accesibilidad y equidad en el acceso al transporte.
+
+Movilidad activa: infraestructura peatonal y ciclista, seguridad vial, reducción de la dependencia del vehículo particular, urbanismo orientado al transporte, diseño de calles completas.
+
+Movilidad inteligente: sistemas de transporte inteligente (ITS), vehículos autónomos y conectados, comunicación vehículo-infraestructura (V2X), gestión de tráfico en tiempo real, inteligencia artificial aplicada a la optimización de rutas y semáforos, ciudades
+inteligentes.
+
+Impacto ambiental y calidad del aire: emisiones de gases de efecto invernadero del sector transporte, contaminantes atmosféricos (material particulado, óxidos de nitrógeno), monitoreo de calidad del aire, huella de carbono del transporte de carga y última milla,
+descarbonización del transporte pesado y logístico.
+
+Gobernanza y política pública: planificación del transporte urbano, políticas de electrificación de flotas, regulación ambiental de zonas urbanas, financiamiento de infraestructura de transporte sostenible, participación ciudadana en la planificación de
+movilidad.
+
+Logística urbana: transporte de carga de última milla, electrificación de flotas de reparto, optimización logística mediante datos, reducción de la congestión asociada al transporte de mercancías.

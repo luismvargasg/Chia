@@ -1,0 +1,8 @@
+Pool: 117 tópicos distintos (unión de los tres top-65).
+single vs max: 28 en común, Jaccard 0.27
+single vs rrf: 43 en común, Jaccard 0.49
+max vs rrf: 33 en común, Jaccard 0.34
+Solo en single: 20 tópicos
+Solo en max: 30 tópicos
+Solo en rrf: 15 tópicos
+Tópicos del top-max por aspecto: A1=17, A2=4, A3=2, A4=1, A5=20, A6=7, A7=5, A8=3, A9=1, A10=2, A11=3

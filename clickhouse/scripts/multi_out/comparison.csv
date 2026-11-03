@@ -1,0 +1,118 @@
+topic_id,name,subfield,field,rank_single,rank_max,rank_rrf,sim_single,best_aspect,best_aspect_sim
+10171,Biofuel production and bioconversion,Biomedical Engineering,Engineering,1,2,5,0.7335,Biorefineries and conversion of lignocellulosic biomass into bioenergy and biofuels,0.6438
+13240,Bioeconomy and Sustainability Development,General Agricultural and Biological Sciences,Agricultural and Biological Sciences,2,3,1,0.7038,"Bioeconomy policy, governance and bio-based business models",0.5941
+10932,Microbial Metabolic Engineering and Bioproduction,Molecular Biology,"Biochemistry, Genetics and Molecular Biology",11,1,8,0.6190,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.6581
+12118,Forest Biomass Utilization and Management,Mechanics of Materials,Engineering,6,,2,0.6582,Biorefineries and conversion of lignocellulosic biomass into bioenergy and biofuels,0.4536
+11009,Catalysis for Biomass Conversion,Biomedical Engineering,Engineering,3,13,17,0.6852,Biorefineries and conversion of lignocellulosic biomass into bioenergy and biofuels,0.5433
+14256,Agricultural and Food Sciences,Forestry,Agricultural and Biological Sciences,7,,3,0.6568,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4482
+10088,Thermochemical Biomass Conversion Processes,Biomedical Engineering,Engineering,4,9,29,0.6727,Biorefineries and conversion of lignocellulosic biomass into bioenergy and biofuels,0.5661
+14010,Food Industry and Aquatic Biology,Food Science,Agricultural and Biological Sciences,15,64,4,0.5939,"Agri-food systems, food processing and biopharmaceutical products from biological sources",0.4678
+10435,Environmental Impact and Sustainability,Environmental Engineering,Environmental Science,,4,,0.4799,"Life cycle assessment, carbon footprint, carbon capture and climate change mitigation",0.5837
+10476,Algal biology and biofuel production,"Renewable Energy, Sustainability and the Environment",Energy,5,,9,0.6692,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4481
+12294,Agricultural Science and Fertilization,Soil Science,Agricultural and Biological Sciences,56,5,21,0.5135,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5834
+11617,Enzyme Production and Characterization,Biotechnology,"Biochemistry, Genetics and Molecular Biology",14,6,44,0.5942,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.5827
+14252,Water and Wastewater Treatment,Computational Mechanics,Engineering,17,,6,0.5845,"Bioplastics, biomaterials and bio-based chemicals from renewable resources",0.4324
+13711,Environmental Science and Technology,Biochemistry,"Biochemistry, Genetics and Molecular Biology",28,39,7,0.5528,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4877
+13246,"Agriculture, Plant Science, Crop Management",Plant Science,Agricultural and Biological Sciences,52,7,14,0.5170,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5817
+14150,Biochemical and biochemical processes,Biotechnology,"Biochemistry, Genetics and Molecular Biology",8,10,11,0.6550,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.5623
+12688,Microbial metabolism and enzyme function,Molecular Biology,"Biochemistry, Genetics and Molecular Biology",19,8,37,0.5777,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.5815
+11208,Lignin and Wood Chemistry,Biomedical Engineering,Engineering,9,15,16,0.6329,Biorefineries and conversion of lignocellulosic biomass into bioenergy and biofuels,0.5419
+10284,Anaerobic Digestion and Biogas Production,Building and Construction,Engineering,10,32,15,0.6191,"Valorization of agro-industrial byproducts and organic waste, anaerobic digestion and composting",0.5060
+10252,Microbial Natural Products and Biosynthesis,Pharmacology,Medicine,21,56,10,0.5671,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4718
+14018,Agriculture and Biological Studies,General Agricultural and Biological Sciences,Agricultural and Biological Sciences,27,11,13,0.5543,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5484
+10507,Biodiesel Production and Applications,Biomedical Engineering,Engineering,12,,36,0.6032,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4201
+10324,Microbial bioremediation and biosurfactants,Pollution,Environmental Science,23,,12,0.5649,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4639
+11088,Marine Bivalve and Aquaculture Studies,Global and Planetary Change,Environmental Science,50,12,51,0.5220,"Forestry, aquaculture and marine biological resources",0.5452
+12003,Bioenergy crop production and management,Agronomy and Crop Science,Agricultural and Biological Sciences,13,,20,0.5976,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4465
+11882,Plant biochemistry and biosynthesis,Molecular Biology,"Biochemistry, Genetics and Molecular Biology",18,14,19,0.5816,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.5431
+12271,Renewable energy and sustainable power systems,"Renewable Energy, Sustainability and the Environment",Energy,16,,34,0.5937,Biorefineries and conversion of lignocellulosic biomass into bioenergy and biofuels,0.4130
+13838,Plant and soil sciences,General Agricultural and Biological Sciences,Agricultural and Biological Sciences,,16,,0.4652,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5364
+12181,Agricultural and Biological Research,Food Science,Agricultural and Biological Sciences,31,17,38,0.5475,"Agri-food systems, food processing and biopharmaceutical products from biological sources",0.5310
+11862,"Agriculture, Land Use, Rural Development",General Agricultural and Biological Sciences,Agricultural and Biological Sciences,,18,,0.4869,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5263
+13663,"Sustainability, Environment, and Optimization Algorithms",Water Science and Technology,Environmental Science,,,18,0.4842,"Biodiversity, genetic resources and ecosystem services",0.4520
+10120,Bacterial Genetics and Biotechnology,Genetics,"Biochemistry, Genetics and Molecular Biology",,19,,0.4863,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.5256
+10404,Enzyme Catalysis and Immobilization,Molecular Biology,"Biochemistry, Genetics and Molecular Biology",20,28,48,0.5758,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.5099
+10226,Land Use and Ecosystem Services,Global and Planetary Change,Environmental Science,,20,,0.4364,"Biodiversity, genetic resources and ecosystem services",0.5250
+12896,Sustainable Agricultural Systems Analysis,Environmental Chemistry,Environmental Science,,21,,0.4677,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5202
+13180,Chemistry and Chemical Engineering,Environmental Chemistry,Environmental Science,22,,47,0.5650,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4455
+13691,"Energy, Environment, Agriculture Analysis","Renewable Energy, Sustainability and the Environment",Energy,43,,22,0.5315,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4241
+10319,"Conservation, Biodiversity, and Resource Management",Global and Planetary Change,Environmental Science,,22,54,0.4778,"Biodiversity, genetic resources and ecosystem services",0.5173
+14398,Agriculture and Social Issues,Plant Science,Agricultural and Biological Sciences,,23,23,0.5057,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5172
+13045,Industrial Engineering and Technologies,Mechanical Engineering,Engineering,24,51,62,0.5624,"Circular economy, nutrient recycling and resource efficiency",0.4729
+12673,Microbial Metabolism and Applications,Biotechnology,"Biochemistry, Genetics and Molecular Biology",37,24,46,0.5367,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.5140
+11259,Agriculture Sustainability and Environmental Impact,Ecology,Environmental Science,,33,24,0.4892,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5028
+13278,Economic and Business Development Strategies,Economics and Econometrics,"Economics, Econometrics and Finance",25,,52,0.5598,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4237
+10005,Ecology and Vegetation Dynamics Studies,Nature and Landscape Conservation,Environmental Science,,25,,0.4198,"Biodiversity, genetic resources and ecosystem services",0.5119
+12186,Phosphorus and nutrient management,Waste Management and Disposal,Environmental Science,,,25,0.4881,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4255
+11231,Microbial Fuel Cells and Bioremediation,Environmental Engineering,Environmental Science,26,30,64,0.5586,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.5084
+12642,Polymer-Based Agricultural Enhancements,Biomedical Engineering,Engineering,,26,53,0.5003,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5110
+13009,Agroforestry and silvopastoral systems,Forestry,Agricultural and Biological Sciences,,,26,0.4699,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4642
+14285,Biopolymer Synthesis and Applications,Molecular Biology,"Biochemistry, Genetics and Molecular Biology",65,27,,0.5097,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.5108
+13394,"Ecology, Conservation, and Geographical Studies",Nature and Landscape Conservation,Environmental Science,,,27,0.4806,"Biodiversity, genetic resources and ecosystem services",0.4376
+11805,Agricultural economics and policies,Safety Research,Social Sciences,32,57,28,0.5411,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4714
+12922,Business and Economic Development,"Management, Monitoring, Policy and Law",Environmental Science,29,,,0.5514,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4009
+10643,Marine and coastal plant biology,Oceanography,Earth and Planetary Sciences,,29,,0.4603,"Forestry, aquaculture and marine biological resources",0.5090
+13746,Mechanical Systems and Engineering,"Renewable Energy, Sustainability and the Environment",Energy,30,,31,0.5503,"Bioplastics, biomaterials and bio-based chemicals from renewable resources",0.3940
+13469,"Environmental, Ecological, and Cultural Studies",Sociology and Political Science,Social Sciences,,,30,0.5009,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4582
+12754,Plant Growth and Agriculture Techniques,Soil Science,Agricultural and Biological Sciences,,31,,0.4619,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5072
+14119,Agricultural and Environmental Management,Demography,Social Sciences,,,32,0.5017,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4508
+11844,Lipid metabolism and biosynthesis,Biochemistry,"Biochemistry, Genetics and Molecular Biology",33,,,0.5400,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4196
+11418,Plant Micronutrient Interactions and Effects,Plant Science,Agricultural and Biological Sciences,,,33,0.4829,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4392
+14438,Advanced Scientific Research Methods,Food Science,Agricultural and Biological Sciences,34,,,0.5391,"Agri-food systems, food processing and biopharmaceutical products from biological sources",0.4561
+13478,Agricultural Development and Management,General Agricultural and Biological Sciences,Agricultural and Biological Sciences,,34,,0.4747,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.5016
+14293,Biotechnology and Related Fields,"Public Health, Environmental and Occupational Health",Medicine,35,36,,0.5373,"Bioeconomy policy, governance and bio-based business models",0.4938
+10032,Marine and coastal ecosystems,Oceanography,Earth and Planetary Sciences,60,50,35,0.5120,"Forestry, aquaculture and marine biological resources",0.4753
+13326,Biochemical and Structural Characterization,Molecular Biology,"Biochemistry, Genetics and Molecular Biology",,35,,0.4692,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4939
+12706,Subcritical and Supercritical Water Processes,Biomedical Engineering,Engineering,36,,,0.5368,Biorefineries and conversion of lignocellulosic biomass into bioenergy and biofuels,0.3916
+13468,Educational Research and Science Teaching,General Agricultural and Biological Sciences,Agricultural and Biological Sciences,,37,,0.4330,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4937
+10240,Plant tissue culture and regeneration,Molecular Biology,"Biochemistry, Genetics and Molecular Biology",38,,59,0.5344,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4528
+13678,Agricultural Research and Practices,General Agricultural and Biological Sciences,Agricultural and Biological Sciences,,38,,0.4089,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4901
+13331,Energy and Environmental Sustainability,"Renewable Energy, Sustainability and the Environment",Energy,39,,,0.5341,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.3615
+11073,Metal Extraction and Bioleaching,Biomedical Engineering,Engineering,41,,39,0.5320,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4360
+13870,Environmental and Ecological Studies,"Renewable Energy, Sustainability and the Environment",Energy,40,,,0.5336,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.3621
+10539,Sustainable Supply Chain Management,Strategy and Management,"Business, Management and Accounting",,40,,0.4942,"Circular economy, nutrient recycling and resource efficiency",0.4877
+14505,Natural Products and Applications,General Agricultural and Biological Sciences,Agricultural and Biological Sciences,,,40,0.4594,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4483
+12012,Diatoms and Algae Research,Biomaterials,Materials Science,45,,41,0.5286,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4564
+12436,Agronomic Practices and Intercropping Systems,Agronomy and Crop Science,Agricultural and Biological Sciences,,41,,0.3985,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4875
+12662,Digitalization and Economic Development in Agriculture,Strategy and Management,"Business, Management and Accounting",42,,,0.5316,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4644
+11672,Recycling and utilization of industrial and municipal waste in materials production,Building and Construction,Engineering,,42,,0.4855,"Circular economy, nutrient recycling and resource efficiency",0.4870
+10004,Soil Carbon and Nitrogen Dynamics,Soil Science,Agricultural and Biological Sciences,,,42,0.4804,"Life cycle assessment, carbon footprint, carbon capture and climate change mitigation",0.4167
+12456,Geotourism and Geoheritage Conservation,Geology,Earth and Planetary Sciences,,43,,0.3991,"Biodiversity, genetic resources and ecosystem services",0.4867
+12944,Animal Nutrition and Health,Plant Science,Agricultural and Biological Sciences,,48,43,0.4891,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4771
+13804,Physical Activity and Education Research,Water Science and Technology,Environmental Science,44,,,0.5303,"Bioplastics, biomaterials and bio-based chemicals from renewable resources",0.3903
+13688,Shallot Cultivation and Analysis,Plant Science,Agricultural and Biological Sciences,,44,,0.4719,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4832
+12838,Photovoltaic Systems and Sustainability,Environmental Engineering,Environmental Science,57,,45,0.5133,"Life cycle assessment, carbon footprint, carbon capture and climate change mitigation",0.4225
+12253,Urban Agriculture and Sustainability,Plant Science,Agricultural and Biological Sciences,,45,,0.4198,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4817
+12929,Animal Genetics and Reproduction,Genetics,"Biochemistry, Genetics and Molecular Biology",46,,,0.5277,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4175
+10450,Aquaculture Nutrition and Growth,Aquatic Science,Agricultural and Biological Sciences,,46,58,0.5061,"Forestry, aquaculture and marine biological resources",0.4786
+11626,Metalloenzymes and iron-sulfur proteins,"Renewable Energy, Sustainability and the Environment",Energy,47,,,0.5240,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4466
+13485,Marine and Coastal Ecosystems,Ecology,Environmental Science,,47,,0.4602,"Forestry, aquaculture and marine biological resources",0.4776
+12856,Transgenic Plants and Applications,Biotechnology,"Biochemistry, Genetics and Molecular Biology",48,61,63,0.5239,"Agri-food systems, food processing and biopharmaceutical products from biological sources",0.4687
+11007,Hybrid Renewable Energy Systems,Energy Engineering and Power Technology,Energy,49,,,0.5226,Biorefineries and conversion of lignocellulosic biomass into bioenergy and biofuels,0.3349
+13630,Agriculture Market Analysis Ukraine,General Agricultural and Biological Sciences,Agricultural and Biological Sciences,61,,49,0.5118,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4523
+14405,Fisheries and Aquaculture Studies,General Agricultural and Biological Sciences,Agricultural and Biological Sciences,,49,,0.4751,"Forestry, aquaculture and marine biological resources",0.4765
+13961,Socioeconomics of Resources and Conservation,Economics and Econometrics,"Economics, Econometrics and Finance",,,50,0.5037,"Circular economy, nutrient recycling and resource efficiency",0.4182
+11924,Polyamine Metabolism and Applications,Molecular Biology,"Biochemistry, Genetics and Molecular Biology",51,,,0.5186,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.3824
+13539,thermodynamics and calorimetric analyses,Physical and Theoretical Chemistry,Chemistry,,52,,0.5066,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4725
+12746,Sustainable Industrial Ecology,Industrial and Manufacturing Engineering,Engineering,53,,,0.5154,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4012
+11136,Enzyme-mediated dye degradation,Plant Science,Agricultural and Biological Sciences,,53,,0.5079,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4723
+13990,Engine and Fuel Emissions,Automotive Engineering,Engineering,54,,,0.5146,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.3662
+12640,Environmental DNA in Biodiversity Studies,Ecology,Environmental Science,,54,,0.4101,"Biodiversity, genetic resources and ecosystem services",0.4721
+14215,Chemical and Environmental Engineering Research,Information Systems,Computer Science,55,,,0.5138,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4412
+13736,Steroid Chemistry and Biochemistry,Molecular Biology,"Biochemistry, Genetics and Molecular Biology",,55,,0.4784,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4720
+13899,Agricultural Systems and Practices,"Ecology, Evolution, Behavior and Systematics",Agricultural and Biological Sciences,,,55,0.4233,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4499
+13438,Environmental Conservation and Management,"Management, Monitoring, Policy and Law",Environmental Science,,,56,0.4586,"Biodiversity, genetic resources and ecosystem services",0.4419
+13391,Innovations in Aquaponics and Hydroponics Systems,Aquatic Science,Agricultural and Biological Sciences,,,57,0.4773,"Agri-food systems, food processing and biopharmaceutical products from biological sources",0.4038
+14481,Renewable Energy and Sustainability,"Renewable Energy, Sustainability and the Environment",Energy,58,,,0.5128,"Circular economy, nutrient recycling and resource efficiency",0.3493
+12441,Porphyrin Metabolism and Disorders,Molecular Biology,"Biochemistry, Genetics and Molecular Biology",,58,,0.4732,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4692
+12710,Engineering and Agricultural Innovations,Aquatic Science,Agricultural and Biological Sciences,59,,,0.5124,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.3949
+13171,Polymer Science and PVC,Polymers and Plastics,Materials Science,,59,,0.4736,"Bioplastics, biomaterials and bio-based chemicals from renewable resources",0.4691
+10765,Marine Biology and Ecology Research,Oceanography,Earth and Planetary Sciences,,60,,0.4746,"Forestry, aquaculture and marine biological resources",0.4689
+10564,Wastewater Treatment and Nitrogen Removal,Pollution,Environmental Science,,,60,0.4999,"Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes",0.4191
+11311,Soil and Water Nutrient Dynamics,Environmental Chemistry,Environmental Science,,,61,0.4600,"Circular economy, nutrient recycling and resource efficiency",0.4042
+12665,Bamboo properties and applications,Plant Science,Agricultural and Biological Sciences,62,,,0.5115,"Bioplastics, biomaterials and bio-based chemicals from renewable resources",0.4093
+10661,biodegradable polymer synthesis and properties,Biomaterials,Materials Science,,62,,0.4821,"Bioplastics, biomaterials and bio-based chemicals from renewable resources",0.4684
+11091,Extraction and Separation Processes,Mechanical Engineering,Engineering,63,,,0.5104,"Circular economy, nutrient recycling and resource efficiency",0.4649
+11066,Organic Food and Agriculture,Plant Science,Agricultural and Biological Sciences,,63,65,0.4705,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4678
+11784,CO2 Reduction Techniques and Catalysts,"Renewable Energy, Sustainability and the Environment",Energy,64,,,0.5102,Biorefineries and conversion of lignocellulosic biomass into bioenergy and biofuels,0.3591
+13069,Cocoa and Sweet Potato Agronomy,Horticulture,Agricultural and Biological Sciences,,65,,0.4406,"Sustainable agriculture, agroecology, biofertilizers and biopesticides",0.4656

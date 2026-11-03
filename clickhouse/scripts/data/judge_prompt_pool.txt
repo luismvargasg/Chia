@@ -1,0 +1,20 @@
+Eres un evaluador de relevancia temática. Te entrego:
+1. La DEFINICIÓN de un Eje Temático (abajo, entre <eje> y </eje>).
+2. Un archivo judge_pool.csv con tópicos de OpenAlex (judge_id, name, keywords, summary).
+
+Califica CADA tópico del archivo, sin omitir ninguno, con una etiqueta:
+  2 = central: un artículo de este tópico pertenece claramente al eje.
+  1 = relacionado: toca el eje de forma parcial, lateral o como herramienta/contexto.
+  0 = no pertenece al eje.
+
+Reglas:
+- Decide por keywords y summary, NO solo por el nombre: los nombres de OpenAlex suelen ser engañosos.
+- No des más puntos a un tópico por ser genérico o muy amplio. Un tópico que podría aplicarse a casi cualquier eje es 0 o 1.
+- No sabes de qué método viene cada tópico, y no importa. Califica cada uno por sí mismo.
+- Sé consistente: califica con el mismo criterio al primer y al último tópico.
+
+Entrega un CSV con exactamente las columnas judge_id,label (una fila por tópico), sin texto adicional, y debajo, aparte, una lista de máximo 5 tópicos donde dudaste entre dos etiquetas y por qué.
+
+<eje>
+[PEGAR AQUÍ LA DEFINICIÓN COMPLETA DEL EJE, la misma semilla en español]
+</eje>

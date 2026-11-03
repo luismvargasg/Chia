@@ -1,0 +1,12 @@
+# Un aspecto por línea. Frases descriptivas cortas, en inglés (los tópicos de OpenAlex están en inglés).
+Biotechnology, synthetic biology and metabolic engineering of microorganisms and enzymes
+Biorefineries and conversion of lignocellulosic biomass into bioenergy and biofuels
+Bioplastics, biomaterials and bio-based chemicals from renewable resources
+Valorization of agro-industrial byproducts and organic waste, anaerobic digestion and composting
+Sustainable agriculture, agroecology, biofertilizers and biopesticides
+Forestry, aquaculture and marine biological resources
+Biodiversity, genetic resources and ecosystem services
+Circular economy, nutrient recycling and resource efficiency
+Life cycle assessment, carbon footprint, carbon capture and climate change mitigation
+Bioeconomy policy, governance and bio-based business models
+Agri-food systems, food processing and biopharmaceutical products from biological sources
