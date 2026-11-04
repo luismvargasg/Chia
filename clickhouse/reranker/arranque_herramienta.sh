@@ -30,15 +30,15 @@ wait_for "$OLLAMA/api/tags" "Ollama" 30 || RC=1
 if curl -s -m 3 -f "http://127.0.0.1:$PORT_R/health" >/dev/null; then say "Reranker ya responde en $PORT_R"; else
   say "Inicio el reranker (carga del modelo ~6 s)"; ( cd "$HERE" && exec setsid bash run_reranker.sh ) < /dev/null >> "$LOGS/reranker.log" 2>&1 &
   wait_for "http://127.0.0.1:$PORT_R/health" "reranker" 60 || RC=1; fi
-if curl -s -m 3 -f "http://127.0.0.1:$PORT_Q/app/theme" >/dev/null; then say "Quyca-dev ya responde en $PORT_Q"; else
+if curl -s -m 3 -f "http://127.0.0.1:$PORT_Q/theme" >/dev/null; then say "Quyca-dev ya responde en $PORT_Q"; else
   say "Construyo y levanto quyca-dev (rama $(git -C "$QUYCA" branch --show-current), commit $(git -C "$QUYCA" rev-parse --short HEAD)); make up-dev tarda ~2 min"
   [ "$(docker ps -a --format '{{.Names}}' | grep -cx quyca-dev)" != "0" ] && (cd "$QUYCA" && make down-dev) < /dev/null >> "$LOGS/quyca_build.log" 2>&1
   (cd "$QUYCA" && make up-dev) < /dev/null >> "$LOGS/quyca_build.log" 2>&1 || { say "ERROR: make up-dev falló (ver $LOGS/quyca_build.log)"; RC=1; }
-  wait_for "http://127.0.0.1:$PORT_Q/app/theme" "quyca-dev" 60 || RC=1; fi
+  wait_for "http://127.0.0.1:$PORT_Q/theme" "quyca-dev" 60 || RC=1; fi
 # warm the embedding model with the same options quyca sends, only if Ollama has it unloaded (keeps the first user request fast; the container keeps it 24 h)
 if ! docker exec ollama-qwen ollama ps 2>/dev/null | grep -q "qwen3-embedding"; then
   OPT=""; [ -n "$NUMGPU" ] && OPT=",\"options\":{\"num_gpu\":$NUMGPU}"
   curl -s -m 120 -o /dev/null -w "%{http_code}" "$OLLAMA/api/embed" -d "{\"model\":\"qwen3-embedding:4b\",\"input\":\"calentamiento\"$OPT}" | { read c; say "Embeddings precalentados (HTTP $c)"; }
 else say "Los embeddings ya estaban cargados"; fi
-say "Reranker: $(curl -s -m 3 http://127.0.0.1:$PORT_R/health)"; say "Quyca-dev: HTTP $(curl -s -m 5 -o /dev/null -w '%{http_code}' http://127.0.0.1:$PORT_Q/app/theme) en :$PORT_Q | GPU: $(nvidia-smi --query-gpu=memory.used,memory.total --format=csv,noheader 2>/dev/null)"
+say "Reranker: $(curl -s -m 3 http://127.0.0.1:$PORT_R/health)"; say "Quyca-dev: HTTP $(curl -s -m 5 -o /dev/null -w '%{http_code}' http://127.0.0.1:$PORT_Q/theme) en :$PORT_Q | GPU: $(nvidia-smi --query-gpu=memory.used,memory.total --format=csv,noheader 2>/dev/null)"
 [ $RC = 0 ] && say "OK: herramienta encendida" || say "FALLA: revise $LOG y los logs de $LOGS"; exit $RC

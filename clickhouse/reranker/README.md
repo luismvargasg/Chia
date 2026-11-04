@@ -1,6 +1,6 @@
 # Servicio del reranker (D-097, B72)
 
-Reordena los 120 tópicos de la fase 1 con **Qwen3-Reranker-4B (Q4_K_M)** en llama.cpp. Un proceso aparte, junto a Ollama; escucha solo en `127.0.0.1:11437`. Quyca lo llama desde `POST /app/theme/candidates/rerank` (contrato `02` §3.10).
+Reordena los 120 tópicos de la fase 1 con **Qwen3-Reranker-4B (Q4_K_M)** en llama.cpp. Un proceso aparte, junto a Ollama; escucha solo en `127.0.0.1:11437`. Quyca lo llama desde `POST /theme/candidates/rerank` (contrato `02` §3.10).
 
 ## Qué hace
 - Carga el modelo **una vez** al arrancar (todas las capas en GPU) y no lo descarga.
